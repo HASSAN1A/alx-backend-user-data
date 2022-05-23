@@ -13,7 +13,7 @@ from user import Base, User
 
 
 class DB:
-    """DB clas
+    """DB class
     """
 
     def __init__(self) -> None:
