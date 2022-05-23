@@ -39,18 +39,18 @@ class Auth:
         return True
 
     def authorization_header(self, request=None) -> str:
-        """ Método que maneja el encabezado de autorización """
+        """ Method that handles the authorization header """
         if request is None:
             return None
 
         return request.headers.get("Authorization", None)
 
     def current_user(self, request=None) -> TypeVar('User'):
-        """ Valida el usuario actual """
+        """ Validate the current user"""
         return None
 
     def session_cookie(self, request=None):
-        """Devuelve un valor de cookie de una solicitud"""
+        """Returns a cookie value from a request"""
 
         if request is None:
             return None
